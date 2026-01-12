@@ -1,0 +1,9 @@
+body { font-family: Arial, sans-serif; background:#f7f7f8; }
+.app { max-width:600px; margin:40px auto; background:white; padding:20px; border-radius:8px; box-shadow:0 6px 18px rgba(0,0,0,0.06); }
+.input-row { display:flex; gap:8px; margin-bottom:16px; }
+.input-row input { flex:1; padding:8px 10px; border:1px solid #ddd; border-radius:4px; }
+.input-row button { padding:8px 12px; }
+.todo-list { list-style:none; padding:0; margin:0; }
+.todo-list li { display:flex; justify-content:space-between; align-items:center; padding:8px 0; border-bottom:1px solid #f0f0f0; }
+.todo-list li.done span { text-decoration:line-through; color:#888; }
+.todo-list .del { background:transparent; border:0; color:#c0392b; cursor:pointer; }

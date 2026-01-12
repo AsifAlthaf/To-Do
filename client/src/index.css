@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* DRY color variables and app background */
+:root {
+	--bg-1: #161de1; /* light slate */
+	--bg-2: #8133a0; /* slate fade */
+	--card-bg: #ffffff;
+	--accent: #0284c7; /* sky-600 */
+	--muted: #64748b;
+}
+
+body { background: linear-gradient(180deg,var(--bg-1),var(--bg-2)); }
+
+/* helper utility classes to resemble shadcn look */
+.card { @apply rounded-lg shadow-md p-6; background: var(--card-bg); }
+.input { @apply border rounded px-3 py-2 w-full; border-color: #e6edf3; }
+.btn { @apply text-white px-4 py-2 rounded; background: var(--accent); }
+.btn:hover { filter:brightness(0.95); }
+.priority-low { color: #16a34a; }
+.priority-medium { color: #d97706; }
+.priority-high { color: #dc2626; }
+
+/* small layout helpers */
+.container { max-width: 56rem; margin-left: auto; margin-right: auto; }
+
